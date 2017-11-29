@@ -1,4 +1,4 @@
 lib
-!lib/lib_backup_list.txt
+!/lib/lib_backup_list.txt
 build/dso_windows_portable/x64
 build/dso_windows_portable/dso_windows_portable/x64
