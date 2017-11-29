@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C7893142-F94B-4231-AE4D-4DD41688234B}</ProjectGuid>
+    <RootNamespace>dso_windows_portable</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)/../../../lib/Sophus;$(ProjectDir)/../../../lib/eigen3;$(ProjectDir)/../../../lib/Pangolin/build/src/include;$(ProjectDir)/../../../lib/Pangolin/include;D:\some_libraries\OpenGL\GLFW3.2\include;D:\some_libraries\OpenGL\glew-2.0.0\include;D:\some_libraries\opencv3\build\include;D:\some_libraries\boost_1_64_0;$(ProjectDir)/linux header;$(ProjectDir)/.;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\some_libraries\OpenGL\GLFW3.2\lib;D:\some_libraries\boost_1_64_0\lib64-msvc-14.0;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)/../../../lib/Sophus;$(ProjectDir)/../../../lib/eigen3;$(ProjectDir)/../../../lib/Pangolin/build/src/include;$(ProjectDir)/../../../lib/Pangolin/include;D:\some_libraries\OpenGL\GLFW3.2\include;D:\some_libraries\OpenGL\glew-2.0.0\include;D:\some_libraries\opencv3\build\include;D:\some_libraries\boost_1_64_0;$(ProjectDir)/linux header;$(ProjectDir)/.;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\some_libraries\OpenGL\GLFW3.2\lib;D:\some_libraries\boost_1_64_0\lib64-msvc-14.0;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)/../../../lib/Sophus;$(ProjectDir)/../../../lib/eigen3;$(ProjectDir)/../../../lib/Pangolin/include;$(ProjectDir)/../../../lib/Pangolin/build/src/include;D:\some_libraries\OpenGL\GLFW3.2\include;D:\some_libraries\OpenGL\glew-2.0.0\include;D:\some_libraries\opencv3\build\include;D:\some_libraries\boost_1_64_0;$(ProjectDir)/linux header;$(ProjectDir)/.;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)/../../../lib/Pangolin/build/src/$(Configuration);D:\some_libraries\opencv3\build\x64\vc14\lib;D:\some_libraries\OpenGL\GLFW3.2\lib;D:\some_libraries\OpenGL\glew-2.0.0\lib\Release\x64;D:\some_libraries\boost_1_64_0\lib64-msvc-14.0;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)/../../../lib/Sophus;$(ProjectDir)/../../../lib/eigen3;$(ProjectDir)/../../../lib/Pangolin/include;$(ProjectDir)/../../../lib/Pangolin/build/src/include;$(ProjectDir)/../../../lib/GLFW3.2\include;$(ProjectDir)/../../../lib/glew-2.0.0\include;$(ProjectDir)/../../../lib/opencv3\build\include;$(ProjectDir)/../../../lib/boost_1_64_0;$(ProjectDir)/linux header;$(ProjectDir)/.;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)/../../../lib/Pangolin/build/external/zlib/lib;$(ProjectDir)/../../../lib/Pangolin/build/external/libjpeg/lib;$(ProjectDir)/../../../lib/Pangolin/build/external/libpng/lib;$(ProjectDir)/../../../lib/Pangolin/build/src/$(Configuration);$(ProjectDir)/../../../lib/opencv3\build\x64\vc14\lib;$(ProjectDir)/../../../lib/GLFW3.2\lib;$(ProjectDir)/../../../lib/glew-2.0.0\lib\Release\x64;$(ProjectDir)/../../../lib/boost_1_64_0\lib64-msvc-14.0;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libboost_thread-vc140-mt-1_64.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>pangolin.lib;opencv_world320d.lib;opengl32.lib;libboost_thread-vc140-mt-1_64.lib;glfw3.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libboost_thread-vc140-mt-1_64.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>pangolin.lib;opencv_world320.lib;opengl32.lib;libboost_thread-vc140-mt-1_64.lib;libboost_date_time-vc140-mt-1_64.lib;glfw3.lib;glew32s.lib;libpng16.lib;jpeg.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="FullSystem\CoarseInitializer.cpp" />
+    <ClCompile Include="FullSystem\CoarseTracker.cpp" />
+    <ClCompile Include="FullSystem\FullSystem.cpp" />
+    <ClCompile Include="FullSystem\FullSystemDebugStuff.cpp" />
+    <ClCompile Include="FullSystem\FullSystemMarginalize.cpp" />
+    <ClCompile Include="FullSystem\FullSystemOptimize.cpp" />
+    <ClCompile Include="FullSystem\FullSystemOptPoint.cpp" />
+    <ClCompile Include="FullSystem\HessianBlocks.cpp" />
+    <ClCompile Include="FullSystem\ImmaturePoint.cpp" />
+    <ClCompile Include="FullSystem\PixelSelector2.cpp" />
+    <ClCompile Include="FullSystem\Residuals.cpp" />
+    <ClCompile Include="IOWrapper\OpenCV\ImageDisplay_OpenCV.cpp" />
+    <ClCompile Include="IOWrapper\OpenCV\ImageRW_OpenCV.cpp" />
+    <ClCompile Include="IOWrapper\Pangolin\KeyFrameDisplay.cpp" />
+    <ClCompile Include="IOWrapper\Pangolin\PangolinDSOViewer.cpp" />
+    <ClCompile Include="main_dso_pangolin.cpp" />
+    <ClCompile Include="OptimizationBackend\AccumulatedSCHessian.cpp" />
+    <ClCompile Include="OptimizationBackend\AccumulatedTopHessian.cpp" />
+    <ClCompile Include="OptimizationBackend\EnergyFunctional.cpp" />
+    <ClCompile Include="OptimizationBackend\EnergyFunctionalStructs.cpp" />
+    <ClCompile Include="util\globalCalib.cpp" />
+    <ClCompile Include="util\settings.cpp" />
+    <ClCompile Include="util\Undistort.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FullSystem\CoarseInitializer.h" />
+    <ClInclude Include="FullSystem\CoarseTracker.h" />
+    <ClInclude Include="FullSystem\FullSystem.h" />
+    <ClInclude Include="FullSystem\HessianBlocks.h" />
+    <ClInclude Include="FullSystem\ImmaturePoint.h" />
+    <ClInclude Include="FullSystem\PixelSelector.h" />
+    <ClInclude Include="FullSystem\PixelSelector2.h" />
+    <ClInclude Include="FullSystem\ResidualProjections.h" />
+    <ClInclude Include="FullSystem\Residuals.h" />
+    <ClInclude Include="IOWrapper\ImageDisplay.h" />
+    <ClInclude Include="IOWrapper\ImageRW.h" />
+    <ClInclude Include="IOWrapper\Output3DWrapper.h" />
+    <ClInclude Include="IOWrapper\OutputWrapper\SampleOutputWrapper.h" />
+    <ClInclude Include="IOWrapper\Pangolin\KeyFrameDisplay.h" />
+    <ClInclude Include="IOWrapper\Pangolin\PangolinDSOViewer.h" />
+    <ClInclude Include="OptimizationBackend\AccumulatedSCHessian.h" />
+    <ClInclude Include="OptimizationBackend\AccumulatedTopHessian.h" />
+    <ClInclude Include="OptimizationBackend\EnergyFunctional.h" />
+    <ClInclude Include="OptimizationBackend\EnergyFunctionalStructs.h" />
+    <ClInclude Include="OptimizationBackend\MatrixAccumulators.h" />
+    <ClInclude Include="OptimizationBackend\RawResidualJacobian.h" />
+    <ClInclude Include="util\DatasetReader.h" />
+    <ClInclude Include="util\FrameShell.h" />
+    <ClInclude Include="util\globalCalib.h" />
+    <ClInclude Include="util\globalFuncs.h" />
+    <ClInclude Include="util\ImageAndExposure.h" />
+    <ClInclude Include="util\IndexThreadReduce.h" />
+    <ClInclude Include="util\MinimalImage.h" />
+    <ClInclude Include="util\nanoflann.h" />
+    <ClInclude Include="util\NumType.h" />
+    <ClInclude Include="util\settings.h" />
+    <ClInclude Include="util\Undistort.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
